@@ -303,7 +303,7 @@ img:hover ~ .overlay {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 7%;
+    padding-top: 9%;
     height: 400px;
     background-color: rgba(70, 73, 76, .6);
     margin: 0 auto;
@@ -347,8 +347,10 @@ img:hover ~ .overlay {
 }
 
 #github {
-    width: 100%;
+    text-align: center;
 }
+
+
 
 .column_3 img {
     max-width: 100%;
