@@ -1,17 +1,23 @@
+*{box-sizing:border-box}
+
 /*---------------------------------
                BODY
 ---------------------------------*/
-body {
-    margin: 0%
+
+#home {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
 }
 
-.background_video {
-    position: fixed;
+#background_video {
+    position: absolute;
+    top: 0;
     right: 0;
     bottom: 0;
     min-width: 100%;
     z-index: -2;
-    display: block;
     background-size: cover;
 }
 
@@ -28,18 +34,10 @@ h1 {
     z-index: 1;
     font-size: 2em;
     color: rgb(197, 195, 198);
-    display: relative;
-    margin: -33px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 85px;
 }
 
-
-.title h1 {
-    transform: translateY(-950%);
-}
-
-.title p {
-    transform: translateY(-1800%);
-}
 
 
 
@@ -85,7 +83,6 @@ nav a:hover {
 
 nav:hover {
     opacity: 1;
-    transition: .5 ease;
 }
 
 /*---------------------------------
@@ -99,8 +96,7 @@ nav:hover {
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     z-index: 1;
-    position: absolute;
-    transform: translateY(-203%);
+    position: relative;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.9);
     box-shadow: 0px -7px 10px rgba(0, 0, 0, 0.4);
 }
@@ -215,9 +211,7 @@ img:hover ~ .overlay {
 
 .lower-container {
     background-image: url("../images/background_wall2.png");
-    position: flex;
-    margin-top: -25%;
-    padding-top: 15%;
+    padding-top: 8%;
 }
 /*---------------------------------
                ABOUT
@@ -237,7 +231,7 @@ img:hover ~ .overlay {
     width: 50%;
     padding: 10px;
     padding-top: 7%;
-    height: 350px;
+    height: 370px;
     background-color: rgb(70, 73, 76);
 }
 
@@ -284,9 +278,9 @@ img:hover ~ .overlay {
 ---------------------------------*/
 
 #gitphoto {
-    margin-top: -10.2%;
-    max-width: 350px;
-    max-height: 350px;
+    margin-top: -9%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /*---------------------------------
