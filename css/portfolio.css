@@ -302,7 +302,7 @@ img:hover ~ .overlay {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: rgb(70, 73, 76)
+    background-color: rgb(70, 73, 76);
 }
 
 form {

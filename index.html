@@ -39,7 +39,7 @@
                 <a href="#top">Home</a>
                 <a href="#about">About</a>
                 <a href="#github">Github</a>
-                <a href="#contact">Contact</a>
+                <a onclick="openForm()">Contact</a>
             </nav>
         </div>
         <br>
@@ -142,25 +142,29 @@
             <div class="row" id="github">
                 <div class="column_1">   <!-- LEFT COLUMN -->
                     <h1>Github</h1>
-                    <p>check out some of my code on Github!</p>
+                    <p>check out some of my code on <a href="https://github.com/hackwithcameron">Github!</a><br>
+                    where you can find my projects
+                    </p>
                 </div>
                 <div class="column_2">   <!-- RIGHT COLUMN -->
-                    <a href="www.github.com"><img id="gitphoto" src="../Portfolio/images/GitHub.png" alt="GITHUB"></a>
+                    <a href="https://github.com/hackwithcameron"><img id="gitphoto" src="../Portfolio/images/GitHub.png" alt="GITHUB"></a>
                 </div>
             </div>
-
-            <!------------------
-                CONTACT
-            ------------------->
 
 
             <div class="row" id="contact">
                 <div class="column_3">   <!-- LEFT COLUMN -->
                     <img src="../Portfolio/images/Contactpic.jpg" alt="Contact Me">
                 </div>
-                
+                <div class="column_1">
+                    <p>Skills also include</p>
+                    <img class="sql_logo" src="./images/sql.png">
                 </div>
             </div>
+
+            <!------------------
+                CONTACT
+            ------------------->
        
         <button class="open-button" onclick="openForm()">Contact Me</button>
         <div class="form-popup" id="myForm">
@@ -176,6 +180,7 @@
                     <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
+    </div>
     
 
                    
@@ -184,13 +189,12 @@
         <!------------------
             FOOTER
         ------------------->
-        <div>
-            <footer>
-                <p>
-                    www.enterwebsite.com &nbsp;|&nbsp; 2019
-                </p>
-            </footer>
-        </div>
+    <div>
+        <footer>
+            <p><br>
+                Cameron Hackwith &nbsp;|&nbsp; &copy;2019
+            </p>
+        </footer>
     </div>
 
 
