@@ -2,170 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cameron Hackwith</title>
-    <link rel="stylesheet" type="text/css" href="./css/portfolio_2.css">
-   
+    
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Text -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Sans|Slabo+27px&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/portfolio_bootstrap.css">
 </head>
 <body class="background">
-    <script>document.body.className += " fade-out";</script>
-    <div class="container" style="height: 54vw;">
-        <div id="top"></div>
-        <video autoplay muted loop id="background_video" width="100%">
-            <source src="./Video/Black - 13495.mp4" type="video/mp4">
-        </video>
-        
+    <script>document.body.className += "fade-out";</script>
+    <div class="container">
+        <div>
+            <div id="top"></div>
+            <video autoplay muted loop id="background_video">
+                <source src="./Video/Black - 13495.mp4" type="video/mp4">
+            </video>
+            
 
-        <div id="home">
-            <span class="title">
-                <h1>Cameron Hackwith</h1>
-                <p>An Oregon-based Full Stack Developer</p>
-                <br>
-                <br>
-                <button id="enter" type="button"><strong>Explore<span id="arrow">&#8681;</span></strong></button>
-            </span>
+            <div id="home">
+                <span class="title">
+                    <h1>Cameron Hackwith</h1>
+                    <p>An Oregon-based Full Stack Developer</p>
+                    <br>
+                    <br>
+                    <button id="enter" type="button"><strong>Explore<span id="arrow">&#8681;</span></strong></button>
+                </span>
+            </div>
         </div>
+        <br>
+        <br>
     </div>
 
         <!------------------
                 NAV
         ------------------->
 
-    <div class="background2">
-        <div class="nav-box">
-            <nav>
-                <a href="#top">Home</a>
-                <a href="#about">About</a>
-                <a href="#github">Github</a>
-                <a onclick="openForm()">Contact</a>
-            </nav>
-        </div>
-        <br>
-        <br>
+    
+    <nav class="navbar sticky-top" id="navcontainer">
+        <form class="form-inline navbox">
+            <a href="#top" class="btn">Home</a>
+            <a href="#about" class="btn">About</a>
+            <a href="#github" class="btn">Github</a>
+            <a class="btn" onclick="openForm()">Contact</a>
+        </form>
+    </nav>
+    <br>
+    <br>
     
        
 
-         <!------------------
+        <!------------------
                 LOGO-BOX
         ------------------->
     
-        <div class="container-logo">
-            <div class="logo-box">
-                <br><h3 id="skills">SKILLS:</h3>
-                <div class="row-logo">
-                    <div id="python" class="column">
-                        <img src="../Portfolio/images/pythonlogo.png" alt="Python Logo">
-                        <h3 class="overlay">Python3</h3>
+    <div class="container">
+        <div class="logo-box">
+            <br><h3 id="skills">SKILLS:</h3>
+            <div class="row row-cols-6">
+                <div class="col">
+                    <img src="../Portfolio/images/pythonlogo.png" alt="Python Logo">
+                    <h3 class="overlay">Python3</h3>
+                </div>
+                <div class="col">
+                    <img src="../Portfolio/images/htmllogo2.png" alt="HTML Logo">
+                    <h3 class="overlay">HTML5</h3>
+                </div>
+                <div class="col">
+                    <img src="../Portfolio/images/csslogo2.png" alt="CSS Logo">
+                    <h3 class="overlay">CSS3</h3>
+                </div>
+                <div class="col">
+                    <img src="../Portfolio/images/javascriptlogo2.png" alt="Javascript Logo">
+                    <h3 class="overlay">Javascript</h3>
+                </div>
+                <div class="col">
+                    <img src="../Portfolio/images/csharplogo.png" alt="CSharp Logo">
+                    <h3 class="overlay">C#</h3>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/hackwithcameron"><img src="../Portfolio/images/githublogo.png" alt="GITHUB Logo"></a>
+                    <h3 class="overlay">GITHUB</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <!------------------
+                ABOUT
+        ------------------->
+    <div class="container">
+        <div class="row" id="about">
+            <div class="col carousel slide carousel-fade" data-ride="carousel" id="one">   <!-- LEFT COLUMN -->
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="ProfilePicture.jpg" class="d-block">
                     </div>
-                    <div id="html-image" class="column">
-                        <img src="../Portfolio/images/htmllogo2.png" alt="HTML Logo">
-                        <h3 class="overlay">HTML5</h3>
+                    <div class="carousel-item">
+                        <img src="./images/pythonlogo.png" class="d-block">
                     </div>
-                    <div id="css-image" class="column">
-                        <img src="../Portfolio/images/csslogo2.png" alt="CSS Logo">
-                        <h3 class="overlay">CSS3</h3>
+                    <div class="carousel-item">
+                        <img src="./images/csslogo2.png" class="d-block">
                     </div>
-                    <div class="column">
-                        <img src="../Portfolio/images/javascriptlogo2.png" alt="Javascript Logo">
-                        <h3 class="overlay">Javascript</h3>
+                    <div class="carousel-item">
+                        <img src="./images/javascriptlogo2.png" class="d-block">
                     </div>
-                    <div class="column">
-                        <img src="../Portfolio/images/csharplogo.png" alt="CSharp Logo">
-                        <h3 class="overlay">C#</h3>
+                    <div class="carousel-item">
+                        <img src="./images/GitHub.png" class="d-block">
                     </div>
-                    <div id="git" class="column">
-                        <img src="../Portfolio/images/githublogo.png" alt="GITHUB Logo">
-                        <h3 class="overlay">GITHUB</h3>
+                    <div class="carousel-item">
+                        <img src="./images/csharplogo.png" class="d-block">
                     </div>
                 </div>
+            </div>
+            <div class="col" id="two">   <!-- RIGHT COLUMN -->
+                <h1>About</h1>
+                <p>I am a software developer that loves every aspect of<br>
+                development. I also enjoy Fishing, Hiking and Traveling.<br>
+                <br> 
+                I am a graduate of The Tech Academy’s Software Developer<br> 
+                Boot Camp, and trained and experienced in the following
+                web and programming languages: HTML, CSS, JavaScript, SQL,<br>
+                C# and more.<br>
+                <br>
+                I am a full-stack developer and would love to work with you on<br>
+                your project. <a id="pointer" onclick="openForm()">Contact</a> me!
+                <br>
+                </p>
+            </div>
+        </div>
+    
+                
+
+        <!------------------
+            GITHUB
+        ------------------->
+
+
+        <div class="row" id="github">
+            <div class="col align-items-center" id="two">   <!-- LEFT COLUMN -->
+                <h1>Github</h1>
+                <p>check out some of my code on <a id="pointer" href="https://github.com/hackwithcameron">Github!</a><br>
+                where you can find my projects
+                </p>
+            </div>
+            <div class="col" id="one">   <!-- RIGHT COLUMN -->
+                <a href="https://github.com/hackwithcameron"><img id="gitphoto" src="../Portfolio/images/GitHub.png" alt="GITHUB"></a>
             </div>
         </div>
 
 
-
-
-            <!------------------
-                    ABOUT
-            ------------------->
-        <div class="container-2">
-
-            <div class="row" id="about">
-                <div class="column_2">   <!-- LEFT COLUMN -->
-                    <div class="slideshow-box">
-                        <div id="slideshow">
-                            <div>
-                                <img src="Cameron Hackwith Link.jpg">
-                            </div>
-                            <div>
-                                <img src="./images/pythonlogo.png">
-                            </div>
-                            <div>
-                                <img src="./images/csslogo2.png">
-                            </div>
-                            <div>
-                                <img src="./images/javascriptlogo2.png">
-                            </div>
-                            <div>
-                                <img src="./images/GitHub.png">
-                            </div>
-                            <div>
-                                <img src="./images/csharplogo.png">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column_1">   <!-- RIGHT COLUMN -->
-                    <h1>About</h1>
-                    <p>I am a software developer that loves every aspect of<br>
-                    development. I also enjoy Fishing, Hiking and Traveling.<br>
-                    <br> 
-                    I am a graduate of The Tech Academy’s Software Developer<br> 
-                    Boot Camp, and trained and experienced in the following
-                    web and programming languages: HTML, CSS, JavaScript, SQL,<br>
-                    C# and more.<br>
-                    <br>
-                    I am a full-stack developer and would love to work with you on<br>
-                    your project. <a href="">Contact</a> me below!
-                    <br>
-                    </p>
-                </div>
+        <div class="row" id="contact">
+            <div class="col" id="one">   <!-- LEFT COLUMN -->
+                <img src="../Portfolio/images/Contactpic.jpg" alt="Contact Me">
             </div>
-                    
-
-            <!------------------
-                GITHUB
-            ------------------->
-
-
-            <div class="row" id="github">
-                <div class="column_1">   <!-- LEFT COLUMN -->
-                    <h1>Github</h1>
-                    <p>check out some of my code on <a href="https://github.com/hackwithcameron">Github!</a><br>
-                    where you can find my projects
-                    </p>
-                </div>
-                <div class="column_2">   <!-- RIGHT COLUMN -->
-                    <a href="https://github.com/hackwithcameron"><img id="gitphoto" src="../Portfolio/images/GitHub.png" alt="GITHUB"></a>
-                </div>
+            <div class="col" id="two">   <!-- RIGHT COLUMN -->
+                <p>Skills also include</p>
+                <img class="sql_logo" src="./images/sql.png">
             </div>
+        </div>
 
-
-            <div class="row" id="contact">
-                <div class="column_3">   <!-- LEFT COLUMN -->
-                    <img src="../Portfolio/images/Contactpic.jpg" alt="Contact Me">
-                </div>
-                <div class="column_1">
-                    <p>Skills also include</p>
-                    <img class="sql_logo" src="./images/sql.png">
-                </div>
-            </div>
-
-            <!------------------
-                CONTACT
-            ------------------->
-       
+        <!------------------
+            CONTACT
+        ------------------->
+    
         <button class="open-button" onclick="openForm()">Contact Me</button>
         <div class="form-popup" id="myForm">
             <form action="" method="get" class="form-container">
@@ -199,6 +207,9 @@
 
 
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script src="./JS/portfolio.js"></script>
 
@@ -209,13 +220,5 @@
 
     </script>
 
-
-
-
-
-
-
-
-    
 </body>
 </html>
