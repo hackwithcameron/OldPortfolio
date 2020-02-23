@@ -31,7 +31,7 @@ setInterval(function() {
 
 $("#enter").click(function() {
     $('html, body').animate( {
-        scrollBottom: $(".background-video").offset().top
+        scrollBottom: $("#video-container").offset().top
     }, 500);
 });
 
