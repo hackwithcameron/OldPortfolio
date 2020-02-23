@@ -15,7 +15,7 @@
 </head>
 <body class="background">
     <script>document.body.className += "fade-out";</script>
-    <div class="container">
+    <div id="video-container">
         <div>
             <div id="top"></div>
             <video autoplay muted loop id="background_video">
@@ -44,7 +44,7 @@
     
     <nav class="navbar sticky-top" id="navcontainer">
         <form class="form-inline navbox">
-            <a href="#top" class="btn">Home</a>
+            <a href="#background_video" class="btn">Home</a>
             <a href="#about" class="btn">About</a>
             <a href="#github" class="btn">Github</a>
             <a class="btn" onclick="openForm()">Contact</a>
